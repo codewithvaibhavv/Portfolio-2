@@ -1,6 +1,6 @@
 # Vaibhav Sharma - Portfolio Website
 
-A modern, dynamic, and responsive portfolio website showcasing my skills, experience, and projects as a Jr. .NET Developer.
+A modern, dynamic, and responsive portfolio website showcasing my skills, experience, and projects as a Software Developer.
 
 ## 🌟 Features
 

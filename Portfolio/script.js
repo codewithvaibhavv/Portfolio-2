@@ -48,10 +48,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(15, 23, 42, 0.98)';
+        navbar.style.background = 'rgba(5, 8, 22, 0.98)';
         navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
     } else {
-        navbar.style.background = 'rgba(15, 23, 42, 0.95)';
+        navbar.style.background = 'rgba(5, 8, 22, 0.95)';
         navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
     }
 });
@@ -174,6 +174,8 @@ contactForm.addEventListener('submit', (e) => {
 
 // Parallax effect for hero section
 document.addEventListener('mousemove', (e) => {
+    if (window.innerWidth <= 968) return; // Disable on mobile/tablet
+    
     const mouseX = e.clientX / window.innerWidth;
     const mouseY = e.clientY / window.innerHeight;
     
